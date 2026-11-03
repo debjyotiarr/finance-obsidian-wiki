@@ -10,7 +10,8 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 - [x] Define relevance criteria in the prompt: microstructure/HFT/mid-freq for equities, futures, options; skip pure asset-pricing, macro, and crypto-only papers.
 - [x] Add a dedupe rule: check title similarity against `10-Literature/` and existing inbox stubs before writing.
 - [ ] Decide cadence: on-demand first; later a scheduled session (weekly arXiv q-fin.TR sweep).
-- [ ] Dry-run on arXiv q-fin.TR recent listings; tune the relevance filter until precision is acceptable (target: >half of staged papers survive human review).
+- [x] Dry-run on arXiv q-fin.TR recent listings; tune the relevance filter until precision is acceptable (target: >half of staged papers survive human review). *Done 2026-11-03: 9 papers staged in `00-Inbox/` via themed web searches. Finding: cloud environment's network policy blocks arxiv.org directly, so abstracts are search-snippet summaries and PDFs could not be downloaded — see the environment note in `pipeline/sweep_prompt.md`. Precision to be measured at first human review.*
+- [ ] Add `arxiv.org` (and `export.arxiv.org`) to the cloud environment's allowed network domains so future sweeps get verbatim abstracts and PDFs.
 
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 

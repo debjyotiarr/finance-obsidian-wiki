@@ -81,6 +81,14 @@ End with a summary table: staged papers (title, venue, one-line relevance), skip
 
 ---
 
+## Environment note (from the 2026-11-03 dry run)
+
+In Claude Code cloud sessions, direct fetches of arxiv.org (and export.arxiv.org) are **denied by the environment's network policy**; web search still surfaces arXiv listings, abstracts and metadata, so the sweep works via themed search queries instead of browsing listing pages. Consequences until arxiv.org is added to the environment's allowed domains:
+- Stub abstracts are **summarized from search snippets**, not verbatim — each stub's Abstract section is labeled accordingly and must be verified at review time.
+- PDFs cannot be downloaded; `pdf:` stays empty, `pdf_url` is kept. The Phase 2 extractor will need either the allowlist fix or locally supplied PDFs.
+- Listing coverage is partial (search recall, not a full month's index). Treat each sweep as sampling, not enumeration, until direct access exists.
+- Cloud sessions are ephemeral: staged stubs must be committed and pushed for the human to review them, overriding the "do not commit" default below for cloud runs (commit *only* inbox stubs plus pipeline/PLAN bookkeeping).
+
 ## Notes for the operator
 
 - Precision target: more than half of staged papers should survive your review (PLAN Phase 1). If precision is low, tighten the "Out of scope" list or the quality bar above — edit this file, it is the single source of truth.
