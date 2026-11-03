@@ -1,0 +1,12 @@
+# Obsidian local state (commit .obsidian/ deliberately later if desired)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
