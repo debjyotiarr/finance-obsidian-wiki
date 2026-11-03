@@ -1,0 +1,1 @@
+# finance-obsidian-wiki
