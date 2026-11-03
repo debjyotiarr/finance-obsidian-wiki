@@ -6,9 +6,9 @@ Implementation roadmap for the ingestion pipeline and vault growth. The vault st
 
 Goal: a repeatable agentic pass that discovers candidate papers from known sites and stages them for human review.
 
-- [ ] Write `pipeline/sweep_prompt.md`: the standing instruction for a Claude Code session. Inputs: `50-Sources/Paper Sources.md` (the site list) and the existing `10-Literature/` index (to skip already-ingested papers). Output per candidate: a stub markdown in `00-Inbox/` with frontmatter (`status: inbox`, title, authors, year, venue, url, abstract, a one-line "why this is relevant") and the PDF in `00-Inbox/papers/` when downloadable.
-- [ ] Define relevance criteria in the prompt: microstructure/HFT/mid-freq for equities, futures, options; skip pure asset-pricing, macro, and crypto-only papers.
-- [ ] Add a dedupe rule: check title similarity against `10-Literature/` and existing inbox stubs before writing.
+- [x] Write `pipeline/sweep_prompt.md`: the standing instruction for a Claude Code session. Inputs: `50-Sources/Paper Sources.md` (the site list) and the existing `10-Literature/` index (to skip already-ingested papers). Output per candidate: a stub markdown in `00-Inbox/` with frontmatter (`status: inbox`, title, authors, year, venue, url, abstract, a one-line "why this is relevant") and the PDF in `00-Inbox/papers/` when downloadable.
+- [x] Define relevance criteria in the prompt: microstructure/HFT/mid-freq for equities, futures, options; skip pure asset-pricing, macro, and crypto-only papers.
+- [x] Add a dedupe rule: check title similarity against `10-Literature/` and existing inbox stubs before writing.
 - [ ] Decide cadence: on-demand first; later a scheduled session (weekly arXiv q-fin.TR sweep).
 - [ ] Dry-run on arXiv q-fin.TR recent listings; tune the relevance filter until precision is acceptable (target: >half of staged papers survive human review).
 
