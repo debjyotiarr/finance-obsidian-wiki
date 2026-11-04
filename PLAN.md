@@ -27,21 +27,21 @@ Goal: deterministic script that converts a reviewed inbox paper into a draft lit
 
 Goal: the intelligent step — distill each draft literature note into atomic ideas wired into the graph.
 
-- [ ] Write `pipeline/refine_prompt.md`: for a given literature note, (1) identify each distinct idea; (2) for each, either update an existing atom (add evidence, references, nuances — *default*) or create a new atom from the template (*only if genuinely new*); (3) add links both ways and update the relevant MOC; (4) fill the literature note's "Atoms extracted" and critique sections; (5) set literature `status: extracted`.
-- [ ] Guardrails in the prompt: never duplicate an atom under a synonym (search `20-Atoms/` first); every new atom gets ≥2 links; keep one idea per note.
+- [x] Write `pipeline/refine_prompt.md`: for a given literature note, (1) identify each distinct idea; (2) for each, either update an existing atom (add evidence, references, nuances — *default*) or create a new atom from the template (*only if genuinely new*); (3) add links both ways and update the relevant MOC; (4) fill the literature note's "Atoms extracted" and critique sections; (5) set literature `status: extracted`.
+- [x] Guardrails in the prompt: never duplicate an atom under a synonym (search `20-Atoms/` first); every new atom gets ≥2 links; keep one idea per note.
 - [ ] Process the 3 seed literature notes' references as the first real batch (Stoikov 2018 microprice, Budish et al. 2015, Tóth et al. 2011, López de Prado 2018 chapters are natural next ingests).
 
 ## Phase 4 — Recombination (atoms → `30-Signals/`)
 
 Goal: systematically mine the graph for new signal ideas.
 
-- [ ] Write `pipeline/recombine_prompt.md`: review the atom graph for adjacent-but-unlinked atoms, atoms sharing tags but never co-cited, and conditioning opportunities ("X works better when Y"); draft signal candidates from the Signal Candidate Template with explicit economics (horizon, capacity, cost hurdle).
-- [ ] Seed candidates already visible: gamma regime × intraday momentum; OFI gated by VPIN; auction imbalance × leveraged-ETF rebalance flows; option-flow lead into single-stock reversal.
-- [ ] Define the promotion checklist (mirrors `40-MOCs/Research Methodology MOC.md`): mechanism stated, labels defined, trials budget declared, cost hurdle computed — before any code is written.
+- [x] Write `pipeline/recombine_prompt.md`: review the atom graph for adjacent-but-unlinked atoms, atoms sharing tags but never co-cited, and conditioning opportunities ("X works better when Y"); draft signal candidates from the Signal Candidate Template with explicit economics (horizon, capacity, cost hurdle).
+- [x] Seed candidates already visible: gamma regime × intraday momentum; OFI gated by VPIN; auction imbalance × leveraged-ETF rebalance flows; option-flow lead into single-stock reversal. *All four written to `30-Signals/` on 2026-11-04.*
+- [x] Define the promotion checklist (mirrors `40-MOCs/Research Methodology MOC.md`): mechanism stated, labels defined, trials budget declared, cost hurdle computed — before any code is written. *Baked into recombine_prompt.md Step 3 and the signal template's validation section.*
 
 ## Phase 5 — Vault maintenance and quality
 
-- [ ] Link-integrity check (script or periodic Claude pass): no orphan atoms, no broken wikilinks, every atom in ≥1 MOC.
+- [x] Link-integrity check (script or periodic Claude pass): no orphan atoms, no broken wikilinks, every atom in ≥1 MOC. *`pipeline/check_vault.py` — also checks the ≥2-atom-links rule and frontmatter `type:`. Run after every refine/recombine pass.*
 - [ ] Promote seed atoms: each `status: seed` atom should reach `developing` by acquiring evidence from ≥2 literature notes.
 - [ ] Decide on Dataview dashboards (e.g., reading queue, seed-atom list, signal pipeline board) and add them to `40-MOCs/Home.md`.
 - [ ] Revisit folder structure once >100 atoms: consider domain subfolders only if navigation actually degrades (prefer flat + MOCs).

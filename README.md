@@ -40,7 +40,7 @@ The numbering orders folders by pipeline stage: raw (00) → per-paper (10) → 
 
 Atoms carry frontmatter (`type`, `status`, `domain`, `assets`, `tags`) for Dataview/graph filtering, then: the **idea** in one paragraph, the **mechanism** (why it persists), **practical notes** (measurement, pitfalls, regime-dependence), **related** links, and **key references**. One idea per note — if a note needs two ideas, split it.
 
-The seed content is ~31 atoms spanning market microstructure (order flow, market making, market structure), execution (impact, scheduling, TCA), mid-frequency signals (intraday patterns, reversal, stat arb, carry), options (flow, gamma, vol surface, VRP), and research methodology (labeling, overfitting, signal decay).
+The seed content is 38 atoms spanning market microstructure (order flow, market making, market structure), execution (impact, scheduling, TCA), mid-frequency signals (intraday patterns, reversal, stat arb, carry), options (flow, gamma, vol surface, VRP), and research methodology (labeling, overfitting, signal decay).
 
 ## Recommended Obsidian setup
 
