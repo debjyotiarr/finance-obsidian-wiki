@@ -11,7 +11,8 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 - [x] Add a dedupe rule: check title similarity against `10-Literature/` and existing inbox stubs before writing.
 - [x] Decide cadence: on-demand first; later a scheduled session (weekly arXiv q-fin.TR sweep). *Decided 2026-11-12: daily scheduled sweep at ~8 am IST with a loose filter (`pipeline/daily_sweep_prompt.md`), pushing stubs to the `inbox-sweeps` branch; runs logged in `90-Meta/Sweep Log.md`.*
 - [x] Dry-run on arXiv q-fin.TR recent listings; tune the relevance filter until precision is acceptable (target: >half of staged papers survive human review). *Done 2026-11-03: 9 papers staged in `00-Inbox/` via themed web searches. Finding: cloud environment's network policy blocks arxiv.org directly, so abstracts are search-snippet summaries and PDFs could not be downloaded — see the environment note in `pipeline/sweep_prompt.md`. Precision to be measured at first human review.*
-- [ ] Add `arxiv.org` (and `export.arxiv.org`) to the cloud environment's allowed network domains so future sweeps get verbatim abstracts and PDFs.
+- [x] Add `arxiv.org` to the cloud environment's allowed network domains so future sweeps get verbatim abstracts and PDFs. *Done 2026-11-12; verified listings and PDFs fetch (HTTP 200). `export.arxiv.org` not allowed (not needed).*
+- [ ] SSRN: `ssrn.com` is allowed but content is on `www.ssrn.com` / `papers.ssrn.com` (separate hosts, still blocked; SSRN may also bot-block). Add those two hosts if direct SSRN access is wanted.
 
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 

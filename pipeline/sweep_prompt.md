@@ -85,13 +85,13 @@ End with a summary table: staged papers (title, venue, one-line relevance), skip
 
 ---
 
-## Environment note (from the 2026-11-03 dry run)
+## Environment note
 
-In Claude Code cloud sessions, direct fetches of arxiv.org (and export.arxiv.org) are **denied by the environment's network policy**; web search still surfaces arXiv listings, abstracts and metadata, so the sweep works via themed search queries instead of browsing listing pages. Consequences until arxiv.org is added to the environment's allowed domains:
-- Stub abstracts are **summarized from search snippets**, not verbatim — each stub's Abstract section is labeled accordingly and must be verified at review time.
-- PDFs cannot be downloaded; `pdf:` stays empty, `pdf_url` is kept. The Phase 2 extractor will need either the allowlist fix or locally supplied PDFs.
-- Listing coverage is partial (search recall, not a full month's index). Treat each sweep as sampling, not enumeration, until direct access exists.
-- Cloud sessions are ephemeral: staged stubs must be committed and pushed for the human to review them, overriding the "do not commit" default below for cloud runs (commit *only* inbox stubs plus pipeline/PLAN bookkeeping).
+Cloud sessions run with limited network access: only hosts on the environment's allowed list are reachable. As of 2026-11-12 `arxiv.org` is allowed (listing pages and PDFs fetch directly; `export.arxiv.org` is a separate host and is **not** allowed, so use the listing pages, not the API) and `ssrn.com` is allowed, but SSRN's real content lives on `www.ssrn.com` / `papers.ssrn.com`, which are separate hosts and are **not** allowed, so SSRN falls back to web search. For any site that cannot be fetched directly:
+- use web search scoped to that site; abstracts from snippets must be labelled as summaries in the stub, and `pdf:` stays empty (keep `pdf_url`);
+- record the site as "search fallback" in the Runs table of `90-Meta/Sweep Log.md`.
+When a PDF *can* be fetched, download it per Step 5 (PDFs are not committed to git; see the PDF storage decision in `PLAN.md`).
+- Cloud sessions are ephemeral: staged stubs must be committed and pushed for the human to review them, overriding the "do not commit" default below for cloud runs (commit *only* inbox stubs, the sweep log and pipeline/PLAN bookkeeping).
 
 ## Notes for the operator
 
