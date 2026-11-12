@@ -87,7 +87,7 @@ End with a summary table: staged papers (title, venue, one-line relevance), skip
 
 ## Environment note
 
-Cloud sessions run with limited network access: only hosts on the environment's allowed list are reachable. As of 2026-11-12 `arxiv.org` is allowed (listing pages and PDFs fetch directly; `export.arxiv.org` is a separate host and is **not** allowed, so use the listing pages, not the API) and `ssrn.com` is allowed, but SSRN's real content lives on `www.ssrn.com` / `papers.ssrn.com`, which are separate hosts and are **not** allowed, so SSRN falls back to web search. For any site that cannot be fetched directly:
+Cloud sessions run with limited network access: only hosts on the environment's allowed list are reachable. As of 2026-11-12 `arxiv.org` and `export.arxiv.org` are allowed: listing pages, the API and PDFs fetch directly. `www.ssrn.com` and `papers.ssrn.com` are allowed by the network policy, but SSRN itself answers automated requests with HTTP 403 (bot protection). **Do not try to evade it** (no spoofed browser headers or similar): use web search scoped to SSRN instead. For any site that cannot be fetched directly:
 - use web search scoped to that site; abstracts from snippets must be labelled as summaries in the stub, and `pdf:` stays empty (keep `pdf_url`);
 - record the site as "search fallback" in the Runs table of `90-Meta/Sweep Log.md`.
 When a PDF *can* be fetched, download it per Step 5 (PDFs are not committed to git; see the PDF storage decision in `PLAN.md`).
