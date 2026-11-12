@@ -11,7 +11,7 @@ Check the sites listed in `50-Sources/Paper Sources.md` for papers posted since 
 ## Step 1 — Load context
 
 1. Read `50-Sources/Paper Sources.md`. **This list is the source of truth for which sites to check** — it will change over time; check every site it lists, in order.
-2. Read the last entry of `90-Meta/Sweep Log.md` to get the previous sweep date. Lookback = since that date, minimum 3 days (covers weekends and missed runs), maximum 14 days.
+2. Read the last row of the **Runs** table in `90-Meta/Sweep Log.md` to get the previous sweep date. Lookback = since that date, minimum 3 days (covers weekends and missed runs), maximum 14 days.
 3. List `10-Literature/` and `00-Inbox/` for dedupe.
 
 ## Step 2 — Sweep
@@ -36,17 +36,21 @@ Write stubs exactly as in `sweep_prompt.md` Step 5, with one addition to frontma
 
 ## Step 5 — Log
 
-Append to `90-Meta/Sweep Log.md`:
+`90-Meta/Sweep Log.md` has two tables. Append rows to both; never rewrite earlier rows.
+
+**Papers** — one row per staged paper:
 
 ```markdown
-## YYYY-MM-DD
-- Lookback: <from> → <to>
-- Staged: N (high: a, medium: b, low: c)
-- Sites: <site> — direct | search fallback | unreachable; ...
-- Overflow / notes: <titles+URLs beyond cap, anything odd>
+| YYYY-MM-DD | Authors — [Short title](abstract URL) | <the core idea in one line> |
 ```
 
-Log a run even when nothing is staged.
+The **Idea** column is the paper's core claim or contribution in one plain sentence (under ~25 words): what it would add to the vault. Do **not** paste or paraphrase the abstract — the abstract lives in the stub. Write it so someone scanning the column can decide whether to open the stub.
+
+**Runs** — one row per run, even when nothing is staged:
+
+```markdown
+| YYYY-MM-DD | <from> → <to> | N (h/m/l: a/b/c) | <site>: direct / search fallback / unreachable; ... | <overflow titles+URLs beyond the cap, anything odd> |
+```
 
 ## Step 6 — Commit and push
 
