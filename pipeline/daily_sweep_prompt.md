@@ -12,7 +12,7 @@ Check the sites listed in `50-Sources/Paper Sources.md` for papers posted since 
 
 1. Read `50-Sources/Paper Sources.md`. **This list is the source of truth for which sites to check** — it will change over time; check every site it lists, in order.
 2. Read the last row of the **Runs** table in `90-Meta/Sweep Log.md` to get the previous sweep date. Lookback = since that date, minimum 3 days (covers weekends and missed runs), maximum 14 days.
-3. List `10-Literature/` and `00-Inbox/` for dedupe.
+3. List `10-Literature/` and `00-Inbox/` (**including subfolders**, e.g. `00-Inbox/baobach-catalogue/`) for dedupe; also check `50-Sources/catalogues/*.csv` for the paper before staging, since its keyword-matched rows are already staged.
 
 ## Step 2 — Sweep
 

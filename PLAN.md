@@ -14,6 +14,8 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 - [x] Add `arxiv.org` to the cloud environment's allowed network domains so future sweeps get verbatim abstracts and PDFs. *Done 2026-11-12; verified listings and PDFs fetch (HTTP 200). `export.arxiv.org` not allowed (not needed).*
 - [x] SSRN: hosts `www.ssrn.com` / `papers.ssrn.com` allowed (2026-11-12) but SSRN returns 403 to automated clients; sweeps use search fallback for SSRN, and PDFs of picked SSRN papers are dropped manually into `00-Inbox/papers/`.
 
+- [x] Bulk-import external catalogue (baobach/hft_papers): 352 keyword-triaged stubs in `00-Inbox/baobach-catalogue/` via `pipeline/import_catalogue.py` (2026-11-12). Review by `relevance:`; abstracts must be fetched before extraction.
+
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 
 Goal: deterministic script that converts a reviewed inbox paper into a draft literature note. Papers are **hand-chosen**; the script does mechanical extraction only.

@@ -13,6 +13,9 @@ Where the agentic sweep looks. Add/remove sources here: **the daily scheduled sw
 - **arXiv q-fin.ST / q-fin.CP** — statistical finance, computational finance.
 - **SSRN FEN** — Financial Economics Network; microstructure and derivatives eJournals. Search, don't browse.
 
+## Catalogues (bulk, one-off imports)
+- **baobach/hft_papers** — 2,302-paper scraped list; imported 2026-11-12. See [[baobach HFT Papers Catalogue]].
+
 ## Journals to track (via new-issue alerts)
 - Journal of Financial Economics, Journal of Finance, Review of Financial Studies (big results surface here late — preprints first).
 - Journal of Financial Markets, Market Microstructure and Liquidity (specialist).

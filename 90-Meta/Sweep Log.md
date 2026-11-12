@@ -27,3 +27,4 @@ Every paper any sweep has staged, one row each, newest last. **Idea** is the pap
 | Date | Lookback | Staged | Sites (direct / search fallback / unreachable) | Notes |
 |---|---|---|---|---|
 | 2026-11-03 | ~2026-08-05 → 2026-11-03 | 9 | arXiv: search fallback | Manual dry run, strict filter. arxiv.org blocked by network policy; no PDFs. 5 borderline papers skipped. |
+| 2026-11-12 | n/a (catalogue import) | 352 (h/m/l: 58/261/33) | baobach/hft_papers CSV, 2,302 rows | Keyword-triaged, not read; stubs in `00-Inbox/baobach-catalogue/`. Per-paper rows omitted from the Papers table (no ideas available without abstracts). See [[baobach HFT Papers Catalogue]]. |
