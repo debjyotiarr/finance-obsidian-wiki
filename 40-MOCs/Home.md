@@ -9,6 +9,7 @@ created: 2026-11-03
 Entry point for the vault. Start here, or open the graph view filtered to `type: atom`.
 
 ## Maps of Content
+- [[Ideas Cheat Sheet]] — every idea on one page: name, core maths, one-line summary
 - [[Market Microstructure MOC]] — order books, flow, liquidity, market structure
 - [[Execution MOC]] — impact, optimal execution, transaction costs
 - [[Mid-Frequency Signals MOC]] — intraday-to-weekly alphas

@@ -6,12 +6,15 @@ created: 2026-11-03
 
 # Paper Sources
 
-Where the agentic sweep looks. Add/remove sources here; the sweep prompt in `pipeline/` reads this list.
+Where the agentic sweep looks. Add/remove sources here: **the daily scheduled sweep reads this file fresh every run**, so editing this list (on the `inbox-sweeps` branch, or merged into it) is how you change which sites are checked.
 
 ## Preprints (primary sweep targets)
 - **arXiv q-fin.TR** (Trading and Market Microstructure) — https://arxiv.org/list/q-fin.TR/recent — highest signal-to-noise for this vault.
 - **arXiv q-fin.ST / q-fin.CP** — statistical finance, computational finance.
 - **SSRN FEN** — Financial Economics Network; microstructure and derivatives eJournals. Search, don't browse.
+
+## Catalogues (bulk, one-off imports)
+- **baobach/hft_papers** — 2,302-paper scraped list; imported 2026-11-12. See [[baobach HFT Papers Catalogue]].
 
 ## Journals to track (via new-issue alerts)
 - Journal of Financial Economics, Journal of Finance, Review of Financial Studies (big results surface here late — preprints first).
