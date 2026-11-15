@@ -17,4 +17,4 @@ created: 2026-11-12
 
 **Next steps for these stubs.** Review by relevance (high first); fetch abstracts (arXiv works directly now) before the extractor runs; delete rejects.
 
-**Abstracts and PDFs (2026-11-15).** The 54 arXiv stubs now carry verbatim abstracts and PDFs in `00-Inbox/papers/` (fetched by `pipeline/fetch_arxiv.py`). The other 298 stubs (288 DOI journal links, 6 PubMed, 4 conference pages) have neither: those hosts are not reachable from the cloud environment and many are paywalled, so their PDFs must be added by hand.
+**Abstracts and PDFs (2026-11-15).** The 54 arXiv stubs now carry verbatim abstracts; their PDFs go in `00-Inbox/papers/`, which is not committed (run `python3 -I pipeline/fetch_arxiv.py` locally to download them). The other 298 stubs (288 DOI journal links, 6 PubMed, 4 conference pages) have neither: those hosts are not reachable from the cloud environment and many are paywalled, so their PDFs must be added by hand.

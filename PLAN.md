@@ -16,7 +16,7 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 
 - [x] Bulk-import external catalogue (baobach/hft_papers): 352 keyword-triaged stubs in `00-Inbox/baobach-catalogue/` via `pipeline/import_catalogue.py` (2026-11-12). Review by `relevance:`; abstracts must be fetched before extraction.
 
-- [x] Fetch verbatim abstracts + PDFs for all arXiv stubs in the inbox (63 papers, 131 MB, committed under `00-Inbox/papers/`) via `pipeline/fetch_arxiv.py` (2026-11-15). Non-arXiv stubs (298) still lack both.
+- [x] Fetch verbatim abstracts + PDFs for all arXiv stubs in the inbox (63 papers; PDFs live in `00-Inbox/papers/`, which is gitignored: run the fetcher on your own machine to get them) via `pipeline/fetch_arxiv.py` (2026-11-15). Non-arXiv stubs (298) still lack both.
 - [ ] Daily sweep cannot push: the scheduled session has no write access to the repo (runs of 2026-11-13 to 15 staged papers but lost them). Needs the repo added to the scheduled task, or the task rebound to a session that has it.
 
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
@@ -55,5 +55,5 @@ Goal: systematically mine the graph for new signal ideas.
 ## Open decisions
 
 - Whether to commit `.obsidian/` config for a consistent graph/plugin setup across machines.
-- PDF storage policy: in-repo (simple, but repo grows) vs. gitignored local folder + URL-only references.
+- ~~PDF storage policy~~ decided 2026-11-15: PDFs are never committed; they live in the gitignored `00-Inbox/papers/` and are re-fetchable with `pipeline/fetch_arxiv.py`.
 - Whether sweep sessions run manually or on a schedule (and where that schedule lives).

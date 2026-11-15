@@ -34,6 +34,10 @@ Cap: **25 stubs per run.** If more pass, stage the 25 most relevant and list the
 
 Write stubs exactly as in `sweep_prompt.md` Step 5, with one addition to frontmatter: `relevance: high | medium | low` (your quick judgment, to help the human triage). Keep "Why staged" to one sentence. If the abstract came from a search snippet rather than the real page, say so in the Abstract heading.
 
+## Step 4b — Abstracts and PDFs
+
+After staging, run `python3 -I pipeline/fetch_arxiv.py` from the vault root. It writes the verbatim abstract into every new arXiv stub and downloads its PDF to `00-Inbox/papers/`. That folder is gitignored: **never commit PDFs**.
+
 ## Step 5 — Log
 
 `90-Meta/Sweep Log.md` has two tables. Append rows to both; never rewrite earlier rows.
