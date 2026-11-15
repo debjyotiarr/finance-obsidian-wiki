@@ -14,7 +14,7 @@ created: 2026-11-03
 **Practical notes.**
 - Log every trial, including abandoned ones — the deflation term needs the true N, which researchers systematically under-report.
 - Combinatorially purged cross-validation (CPCV) and walk-forward with embargoes reduce leakage; see [[Triple Barrier Labeling]] for label-driven leakage.
-- Microstructure backtests add simulator risk on top: fill assumptions (queue position, latency) can fabricate the entire PnL. Simulate pessimistically ([[Queue Position Value]]).
+- Microstructure backtests add simulator risk on top: fill assumptions (queue position, latency) can fabricate the entire PnL. Simulate pessimistically ([[Queue Position Value]]), and check what the simulator can and cannot represent ([[Limit Order Book Simulation]]).
 - A strategy with a mediocre but honest backtest and a clear mechanism beats a spectacular mined one — mechanism is the prior that survives deflation.
 
 **Related.** [[Signal Decay and Alpha Horizon]], [[Triple Barrier Labeling]], [[Limit Order Book Shape as Signal]]

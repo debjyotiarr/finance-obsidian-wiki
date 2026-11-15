@@ -27,7 +27,8 @@ Done 2026-11-15: `pipeline/extract.py`.
 - [x] Focus set for a trading project: implementation, data, costs, latency, results, each as verbatim sentences with page numbers; maths not extracted, only rated light/moderate/heavy; explicit warning when a paper ignores costs or latency.
 - [x] PDF text via pypdf, falling back to `pdftotext`.
 - [ ] No OCR: scanned PDFs yield nothing. Add only if needed.
-- [ ] Tune keyword lists after the first real batch (tested on 7 papers so far).
+- [x] First real paper (FlowLOB, 2026-11-16) exposed three bugs, now fixed: Obsidian's block-style frontmatter lists were read as empty (authors, tags), `pdftotext -layout` interleaved two-column text, and "UNet of" matched the cost term "net of".
+- [ ] Tune keyword lists further as more papers go through.
 
 ## Phase 3 — Claude Code refinement pass (literature notes → atoms + links)
 

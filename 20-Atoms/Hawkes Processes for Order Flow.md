@@ -18,7 +18,7 @@ created: 2026-11-03
 
 **Practical notes.**
 - Exponential kernels fit fast and are usually enough; power-law kernels fit the data better but complicate estimation.
-- Useful as a simulator for testing market-making logic before live data — complements [[Limit Order Book Shape as Signal]].
+- Useful as a simulator for testing market-making logic before live data — complements [[Limit Order Book Shape as Signal]]. It is interactive, which learned snapshot generators are not, but it is much less realistic: a fitted compound Hawkes baseline was far from real data on price and volume distributions compared with learned generators (Wang et al. 2026). See [[Limit Order Book Simulation]].
 
 **Related.** [[Order Flow Imbalance]], [[Trade Sign Autocorrelation]], [[Volume Clock]]
 

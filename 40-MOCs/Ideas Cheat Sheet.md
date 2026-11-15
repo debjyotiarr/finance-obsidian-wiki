@@ -6,7 +6,7 @@ created: 2026-11-12
 
 # Ideas Cheat Sheet
 
-Every idea in the vault: name, core maths, one-line summary. 38 atoms + 4 signal candidates. Click a name to open the full note.
+Every idea in the vault: name, core maths, one-line summary. 39 atoms + 4 signal candidates. Click a name to open the full note.
 
 ## Market Microstructure — order book and flow
 
@@ -177,6 +177,10 @@ Best-of-$N$ backtests inflate Sharpe; deflate for trials, skew, kurtosis and tra
 **[[Triple Barrier Labeling]]**
 $y_i = \begin{cases} +1 & \text{upper } P_0(1+k\sigma_t) \text{ hit first}\\ -1 & \text{lower } P_0(1-k\sigma_t) \text{ hit first}\\ \text{sign}(r) \text{ or } 0 & \text{vertical } t_0+h\end{cases}$
 Label by which of profit, stop or time barrier is hit first; meta-labeling separates side from size.
+
+**[[Limit Order Book Simulation]]**
+Tick-relative state: $x^{\text{price}}_t = (\Delta m_t/\delta,\ \text{level gaps}/\delta)$, $x^{\text{vol}} = \log(V+1)$; flow matching: $x_\tau=(1-\tau)z+\tau x_0$, learn $v_\theta \approx x_0 - z$, sample with 10 Euler steps
+Simulated books stand in for the single historical path; a simulator must be both realistic and reactive to your orders, and most are only one.
 
 ## Signal Candidates (`30-Signals/`)
 

@@ -17,6 +17,7 @@ How ideas become (or fail to become) signals.
 
 ## Validation
 - [[Backtest Overfitting and Deflated Sharpe]]
+- [[Limit Order Book Simulation]]
 
 ## Lifecycle and economics
 - [[Signal Decay and Alpha Horizon]]

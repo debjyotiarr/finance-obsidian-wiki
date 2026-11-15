@@ -21,6 +21,7 @@ Needs `pip install pypdf` (or the `pdftotext` command on PATH).
 PDFs are treated as untrusted data: text is only read, never executed.
 """
 import datetime as dt
+import json
 import re
 import shutil
 import subprocess
@@ -61,7 +62,7 @@ COMPILED = {k: re.compile(v, re.I) for k, v in CATEGORIES.items()}
 STRONG = {
     "costs": re.compile(
         r"transaction costs?|trading costs?|execution costs?|fees?\b|rebates?|commission|slippage|"
-        r"basis points?|\bbps\b|net of|after costs|turnover|capacity|break[- ]even|"
+        r"basis points?|\bbps\b|\bnet of|after costs|turnover|capacity|break[- ]even|"
         r"market impact|price impact|implementation shortfall", re.I),
     "latency": re.compile(
         r"latenc|microsecond|millisecond|nanosecond|co-?locat|tick[- ]to[- ]trade|fpga|round[- ]trip|"
@@ -78,7 +79,7 @@ def pdf_pages(pdf: Path) -> list[str]:
     except ImportError:
         pass
     if shutil.which("pdftotext"):
-        out = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True, check=True)
+        out = subprocess.run(["pdftotext", str(pdf), "-"], capture_output=True, text=True, check=True)
         return out.stdout.split("\f")
     raise SystemExit("Need a PDF reader: run `pip install pypdf` (or install pdftotext).")
 
@@ -103,16 +104,31 @@ def field(text: str, key: str) -> str:
     return m.group(1).strip() if m else ""
 
 
-def last_names(authors_line: str) -> list[str]:
-    quoted = re.findall(r'"([^"]+)"', authors_line)
-    if quoted:
-        return [a.split()[-1] for a in quoted]
-    parts = [p.strip() for p in authors_line.strip("[]").split(",") if p.strip()]
-    return parts[0::2] if len(parts) > 1 else parts   # "Last, First, Last, First"
+def fm_list(text: str, key: str) -> list[str]:
+    """A frontmatter list, whether inline (`key: [a, b]`) or in the block style
+    Obsidian rewrites it to (`key:` followed by `  - a` lines)."""
+    inline = field(text, key)
+    if inline:
+        quoted = re.findall(r'"([^"]+)"', inline)
+        return quoted or [p.strip() for p in inline.strip("[]").split(",") if p.strip()]
+    m = re.search(rf"^{key}:[ \t]*\n((?:[ \t]+-[ \t]*.*\n?)+)", text, re.M)
+    if not m:
+        return []
+    return [i.strip().strip('"\'') for i in re.findall(r"^[ \t]+-[ \t]*(.*)$", m.group(1), re.M) if i.strip()]
+
+
+def inline_list(items: list[str]) -> str:
+    return "[" + ", ".join(json.dumps(i, ensure_ascii=False) for i in items) + "]"
+
+
+def last_names(authors: list[str]) -> list[str]:
+    if len(authors) > 1 and len(authors) % 2 == 0 and all(" " not in a for a in authors):
+        return authors[0::2]                      # legacy stubs: Last, First, Last, First
+    return [a.split()[-1] for a in authors]
 
 
 def note_name(text: str) -> str:
-    names = last_names(field(text, "authors")) or ["Unknown"]
+    names = last_names(fm_list(text, "authors")) or ["Unknown"]
     who = " ".join(names) if len(names) <= 3 else f"{names[0]} et al"
     title = field(text, "title").strip('"')
     short = " ".join(re.sub(r"[^\w\s\-]", "", title).split()[:9])
@@ -199,7 +215,7 @@ def extract(stub: Path, out_dir: Path, keep: bool, force: bool = False) -> str:
 type: literature
 status: skimmed
 title: {field(text, "title")}
-authors: {field(text, "authors")}
+authors: {inline_list(fm_list(text, "authors"))}
 year: {field(text, "year")}
 venue: {field(text, "venue")}
 url: {field(text, "url")}
@@ -208,7 +224,7 @@ pages: {len(pages)}
 maths: {maths}
 costs_discussed: {"yes" if has_costs else "no"}
 latency_discussed: {"yes" if has_latency else "no"}
-tags: {field(text, "tags") or "[]"}
+tags: {inline_list(fm_list(text, "tags"))}
 created: {dt.date.today().isoformat()}
 ---
 

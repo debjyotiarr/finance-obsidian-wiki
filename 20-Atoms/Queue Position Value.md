@@ -17,6 +17,7 @@ created: 2026-11-03
 - Value of queue position can be estimated by simulating fill outcomes conditional on remaining queue ahead (Moallemi & Yuan).
 - Drives behavior: traders join new levels early, use order-splitting to preserve priority, and treat cancel/replace decisions as an option-value problem.
 - Matters most in ES-type futures and sub-dollar-spread equities; irrelevant in small-tick names.
+- Testing queue-dependent logic needs an interactive, event-level simulator; snapshot generators have no queue or fills ([[Limit Order Book Simulation]]).
 
 **Related.** [[Tick Size Constraints]], [[Market Maker Inventory Control]], [[Limit Order Book Shape as Signal]]
 

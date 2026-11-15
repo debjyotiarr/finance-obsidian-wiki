@@ -17,6 +17,7 @@ created: 2026-11-03
 
 **Practical notes.**
 - Classify your universe by average spread in ticks before building any book signal.
+- Modelling across instruments: express prices in ticks (mid change, gaps between levels) and volumes in logs. This removes symbol-specific scale and lets one generative book model transfer to an unseen symbol (Wang et al. 2026, see [[Limit Order Book Simulation]]).
 - Regulatory tick changes (e.g., US Tick Size Pilot, half-penny ticks under Reg NMS amendments) are natural experiments and regime breaks.
 
 **Related.** [[Queue Position Value]], [[Microprice]], [[Bid-Ask Spread Decomposition]], [[Maker-Taker Fee Economics]]
