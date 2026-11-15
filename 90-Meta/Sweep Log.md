@@ -90,3 +90,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-03 | ~2026-08-05 → 2026-11-03 | 9 | arXiv: search fallback | Manual dry run, strict filter. arxiv.org blocked by network policy; no PDFs. 5 borderline papers skipped. |
 | 2026-11-12 | n/a (catalogue import) | 352 (h/m/l: 58/261/33) | baobach/hft_papers CSV, 2,302 rows | Keyword-triaged, not read; stubs in `00-Inbox/baobach-catalogue/`. Per-paper rows omitted from the Papers table (no ideas available without abstracts). See [[baobach HFT Papers Catalogue]]. |
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 7 (h/m/l: 0/4/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-15 | 2026-11-12 → 2026-11-15 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
