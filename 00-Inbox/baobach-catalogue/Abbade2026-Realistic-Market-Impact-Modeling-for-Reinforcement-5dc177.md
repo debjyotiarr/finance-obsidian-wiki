@@ -7,7 +7,7 @@ year: 2026
 venue: "arXiv 2603.29086"
 url: http://arxiv.org/abs/2603.29086
 pdf_url:
-pdf:
+pdf: 00-Inbox/papers/Abbade2026-Realistic-Market-Impact-Modeling-for-Reinforcement-5dc177.pdf
 swept: 2026-11-12
 origin: baobach/hft_papers catalogue
 relevance: high
@@ -16,9 +16,8 @@ tags: [arxiv, impact]
 
 # Realistic Market Impact Modeling for Reinforcement Learning Trading Environments
 
-## Abstract
-*Not available — the source catalogue has no abstracts. Fetch from the URL above before extracting.*
-
+## Abstract (verbatim from arXiv)
+Reinforcement learning (RL) has shown promise for trading, yet most open-source backtesting environments assume negligible or fixed transaction costs, causing agents to learn trading behaviors that fail under realistic execution. We introduce three Gymnasium-compatible trading environments -- MACE (Market-Adjusted Cost Execution) stock trading, margin trading, and portfolio optimization -- that integrate nonlinear market impact models grounded in the Almgren-Chriss framework and the empirically validated square-root impact law. Each environment provides pluggable cost models, permanent impact tracking with exponential decay, and comprehensive trade-level logging. We evaluate five DRL algorithms (A2C, PPO, DDPG, SAC, TD3) on the NASDAQ-100, comparing a fixed 10 bps baseline against the AC model with Optuna-tuned hyperparameters. Our results show that (i) the cost model materially changes both absolute performance and the relative ranking of algorithms across all three environments; (ii) the AC model produces dramatically different trading behavior, e.g., daily costs dropping from $200k to $8k with turnover falling from 19% to 1%; (iii) hyperparameter optimization is essential for constraining pathological trading, with costs dropping up to 82%; and (iv) algorithm-cost model interactions are strongly environment-specific, e.g., DDPG's OOS Sharpe jumps from -2.1 to 0.3 under AC in margin trading while SAC's drops from -0.5 to -1.2. We release the full suite as an open-source extension to FinRL-Meta.
 
 ## Why staged
 Auto-triaged by keyword from the baobach/hft_papers catalogue (unreviewed; quality unknown). Possible atoms: [[Square-Root Law of Market Impact]].
