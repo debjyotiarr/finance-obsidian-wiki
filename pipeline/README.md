@@ -1,6 +1,6 @@
 # Pipeline
 
-Ingestion tooling. Not yet implemented — see `PLAN.md` at the repo root for the phased roadmap.
+Ingestion tooling. See `PLAN.md` at the repo root for the roadmap.
 
 Contents:
 
@@ -14,7 +14,4 @@ Contents:
 - `refine_prompt.md` — Claude Code instructions: literature note → atoms + links (Phase 3).
 - `recombine_prompt.md` — Claude Code instructions: atom graph → signal candidates (Phase 4).
 - `check_vault.py` — integrity checker: broken wikilinks, orphan/under-linked atoms, atoms missing from MOCs, missing frontmatter. Run `python3 pipeline/check_vault.py` from the vault root after every refine/recombine pass.
-
-Planned:
-
-- `extract.py` + `requirements.txt` — python extractor: hand-picked inbox PDF → draft literature note (Phase 2). Blocked on arxiv.org network access (or locally supplied PDFs).
+- `extract.py` (+ `requirements.txt`) — turns picked inbox stubs into draft literature notes: pulls implementation, data, cost, latency and result sentences from the PDF with page numbers, flags papers that ignore costs or latency, and skips the maths. `python3 pipeline/extract.py --picked`.

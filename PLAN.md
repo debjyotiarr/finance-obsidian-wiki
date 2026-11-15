@@ -21,13 +21,13 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 
-Goal: deterministic script that converts a reviewed inbox paper into a draft literature note. Papers are **hand-chosen**; the script does mechanical extraction only.
+Done 2026-11-15: `pipeline/extract.py`.
 
-- [ ] `pipeline/extract.py`: input = inbox stub + PDF; output = `10-Literature/Author Year - Short Title.md` prefilled from the Literature Note Template (metadata from the stub, abstract, section headings, and extracted key sentences; `status: skimmed`).
-- [ ] PDF text layer: pypdf/pdfplumber first; add OCR fallback later only if needed.
-- [ ] Carry a `pdf:` frontmatter link to the archived PDF; move the PDF from inbox to a `10-Literature/pdfs/` folder (or leave in inbox/papers — decide and document in Conventions).
-- [ ] Delete the inbox stub on successful extraction.
-- [ ] `pipeline/requirements.txt` + a short `pipeline/README.md` with usage.
+- [x] Mark a stub `status: picked`, then `python3 pipeline/extract.py --picked` writes `10-Literature/Author Year - Title.md` (`status: skimmed`), moves the PDF to `10-Literature/pdfs/` (gitignored) and removes the stub.
+- [x] Focus set for a trading project: implementation, data, costs, latency, results, each as verbatim sentences with page numbers; maths not extracted, only rated light/moderate/heavy; explicit warning when a paper ignores costs or latency.
+- [x] PDF text via pypdf, falling back to `pdftotext`.
+- [ ] No OCR: scanned PDFs yield nothing. Add only if needed.
+- [ ] Tune keyword lists after the first real batch (tested on 7 papers so far).
 
 ## Phase 3 — Claude Code refinement pass (literature notes → atoms + links)
 

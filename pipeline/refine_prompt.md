@@ -1,12 +1,22 @@
 # Refine Prompt — literature notes → atoms + links
 
-Standing instructions for a Claude Code session run from the vault root ("refine <literature note> per pipeline/refine_prompt.md"). Input: one or more literature notes in `10-Literature/` with `status: skimmed` (drafts from the Phase 2 extractor, or hand-written). This is the intelligent extraction step: it wires each paper's ideas into the graph.
+Standing instructions for a Claude Code session run from the vault root ("refine <literature note> per pipeline/refine_prompt.md"). Input: one or more literature notes in `10-Literature/` with `status: skimmed` (drafts from `pipeline/extract.py`, whose quoted sentences are keyword matches and may be noisy, or hand-written notes). This is the intelligent extraction step: it wires each paper's ideas into the graph.
 
 ---
 
 ## Task
 
 For each target literature note, distill its distinct ideas into `20-Atoms/`, link everything, and finish the literature note. Read the actual paper content in the note (and the PDF, if `pdf:` points to one) — do not work from the title alone.
+
+## What this vault wants from a paper
+
+This is a quant HF trading project, not a maths seminar. For every paper, the priority order is:
+1. **Implementation** — the decision rule, inputs, parameters and data, concrete enough to code. This is mandatory: fill in the note's *Implementation checklist* completely, reading the PDF where the extracted quotes are not enough.
+2. **Costs** — what the paper assumes about fees, spread, slippage and impact, and whether the result survives them. If the paper is silent, say the results are gross.
+3. **Latency** — what speed the edge needs and any sensitivity shown. If silent, say so and give your own estimate of the horizon class (microseconds, seconds, minutes).
+4. **Maths** — only what is needed to implement the idea: the final formula, not the derivation. Skip proofs entirely.
+
+Carry cost and latency facts into the atoms' *Practical notes*, not just the literature note.
 
 ## Step 1 — Load context
 

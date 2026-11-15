@@ -15,7 +15,8 @@ created: 2026-11-03
 
 ## Status lifecycle
 - Atoms: `seed` (stub from initial import or extraction) → `developing` (has evidence from 2+ literature notes) → `mature` (stable, well-linked).
-- Literature: `unread` → `skimmed` → `extracted` (all atoms pulled out, safe to archive).
+- Inbox stubs: `inbox` → `picked` (you changed the word by hand: "extract this one"). `pipeline/extract.py --picked` then turns each picked stub into a literature note.
+- Literature: `unread` → `skimmed` (draft from the extractor) → `extracted` (all atoms pulled out, safe to archive).
 - Signals: `idea` → `researching` → `backtested` → `live` / `retired`.
 
 ## Linking rules

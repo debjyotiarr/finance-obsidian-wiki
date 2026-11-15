@@ -13,3 +13,4 @@ __pycache__/
 
 # Paper PDFs stay local: fetch with pipeline/fetch_arxiv.py, or drop files in by hand
 00-Inbox/papers/*.pdf
+10-Literature/pdfs/
