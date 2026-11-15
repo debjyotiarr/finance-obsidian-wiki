@@ -3,7 +3,8 @@
 
     python3 pipeline/extract.py --picked            # every stub with `status: picked`
     python3 pipeline/extract.py 00-Inbox/<stub>.md  # or name stubs explicitly
-    options: --keep (leave stub and PDF in the inbox), --out DIR (write notes elsewhere)
+    options: --keep (leave stub and PDF in the inbox), --out DIR (write notes elsewhere),
+             --force (overwrite a note that already exists)
 
 For each paper it reads the PDF text and pulls out, with page numbers, the
 sentences a trading project needs: how the idea is implemented, what data it
@@ -118,8 +119,11 @@ def note_name(text: str) -> str:
     return f"{who} {field(text, 'year')} - {short}"
 
 
-def extract(stub: Path, out_dir: Path, keep: bool) -> str:
+def extract(stub: Path, out_dir: Path, keep: bool, force: bool = False) -> str:
     text = stub.read_text(encoding="utf-8")
+    existing = out_dir / (note_name(text) + ".md")
+    if existing.exists() and not force:
+        return f"SKIP {stub.name}: note already exists ({existing.name}); pass --force to overwrite it"
     pdf = INBOX / "papers" / (stub.stem + ".pdf")
     if not pdf.exists():
         return f"SKIP {stub.name}: no PDF in 00-Inbox/papers/ (run pipeline/fetch_arxiv.py, or drop the PDF in under the stub's name)"
@@ -261,6 +265,7 @@ created: {dt.date.today().isoformat()}
 def main() -> int:
     args = sys.argv[1:]
     keep = "--keep" in args
+    force = "--force" in args
     out_dir = LIT
     if "--out" in args:
         out_dir = Path(args[args.index("--out") + 1]).resolve()
@@ -273,7 +278,7 @@ def main() -> int:
         print(__doc__)
         return 2
     for s in stubs:
-        print(extract(s, out_dir, keep))
+        print(extract(s, out_dir, keep, force))
     return 0
 
 
