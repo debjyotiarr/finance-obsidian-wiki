@@ -17,7 +17,7 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 - [x] Bulk-import external catalogue (baobach/hft_papers): 352 keyword-triaged stubs in `00-Inbox/baobach-catalogue/` via `pipeline/import_catalogue.py` (2026-11-12). Review by `relevance:`; abstracts must be fetched before extraction.
 
 - [x] Fetch verbatim abstracts + PDFs for all arXiv stubs in the inbox (63 papers; PDFs live in `00-Inbox/papers/`, which is gitignored: run the fetcher on your own machine to get them) via `pipeline/fetch_arxiv.py` (2026-11-15). Non-arXiv stubs (298) still lack both.
-- [ ] Daily sweep cannot push: the scheduled session has no write access to the repo (runs of 2026-11-13 to 15 staged papers but lost them). Needs the repo added to the scheduled task, or the task rebound to a session that has it.
+- [x] Daily sweep moved to a script + GitHub Action (2026-11-15): `pipeline/daily_sweep.py` run by `.github/workflows/daily-sweep.yml` at 07:44 IST, pushing to `inbox-sweeps`. **The schedule only starts once the workflow file is on `main` (merge PR #2).** Until then a scheduled task in the Claude session runs the same script. Idea column is filled in later review passes.
 
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 

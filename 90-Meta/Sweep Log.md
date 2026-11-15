@@ -75,6 +75,13 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-12 | Zhou et al. — [High-Frequency Trading on Decentralized On-Chain Exchanges](https://arxiv.org/abs/2009.14021) | Formalises and measures sandwich attacks (front- plus back-running) on AMM exchanges. Crypto-only. |
 | 2026-11-12 | Zhou — [Application of Black-Litterman Bayesian in Statistical Arbitrage](https://arxiv.org/abs/2406.06706) | Feed pairs-trading signals in as Black-Litterman views to get a portfolio that holds up in stressed markets. |
 | 2026-11-12 | Zhuang et al. — [Quantum Quantitative Trading: High-Frequency Statistical Arbitrage](https://arxiv.org/abs/2104.14214) | Quantum algorithm for stat-arb cointegration tests with claimed speed-up. Not actionable. |
+| 2026-11-15 | Bayraktar et al. — [Price-impact Martingale optimal transport](https://arxiv.org/abs/2611.17247) | — |
+| 2026-11-15 | Hirsch et al. — [Improving Algorithmic Trading for BESS on Intraday Electricity Markets through Distributional Price Forecasts](https://arxiv.org/abs/2611.17170) | — |
+| 2026-11-15 | Gamrani & Pham — [Media Trading with Censored Auction Prices: A Stochastic Control and Reinforcement Learning Approach](https://arxiv.org/abs/2611.16992) | — |
+| 2026-11-15 | Fabi & Leloup — [Verifiable Settlement and Pricing for Local Energy Markets: Architecture and Deployment on Hyperledger Besu](https://arxiv.org/abs/2611.16495) | — |
+| 2026-11-15 | Mensah et al. — [Dynamic Scenario-Based Portfolio Optimization for Multi-Asset ETFs](https://arxiv.org/abs/2611.16540) | — |
+| 2026-11-15 | Huang — [TAPES: Terminal Adjoint-Propagated Error Scheduling for Financial Diffusion Samplers](https://arxiv.org/abs/2611.16484) | — |
+| 2026-11-15 | Choulli & Elazkany — [Novel Esscher concepts for informational risks and valuation in market models under random horizon](https://arxiv.org/abs/2611.16129) | — |
 
 ## Runs
 
@@ -82,3 +89,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 |---|---|---|---|---|
 | 2026-11-03 | ~2026-08-05 → 2026-11-03 | 9 | arXiv: search fallback | Manual dry run, strict filter. arxiv.org blocked by network policy; no PDFs. 5 borderline papers skipped. |
 | 2026-11-12 | n/a (catalogue import) | 352 (h/m/l: 58/261/33) | baobach/hft_papers CSV, 2,302 rows | Keyword-triaged, not read; stubs in `00-Inbox/baobach-catalogue/`. Per-paper rows omitted from the Papers table (no ideas available without abstracts). See [[baobach HFT Papers Catalogue]]. |
+| 2026-11-15 | 2026-11-12 → 2026-11-15 | 7 (h/m/l: 0/4/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
