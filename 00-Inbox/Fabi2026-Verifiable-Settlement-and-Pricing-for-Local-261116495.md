@@ -7,7 +7,7 @@ year: 2026
 venue: "arXiv cs.CR (2611.16495)"
 url: https://arxiv.org/abs/2611.16495
 pdf_url: https://arxiv.org/pdf/2611.16495
-pdf:
+pdf: 00-Inbox/papers/Fabi2026-Verifiable-Settlement-and-Pricing-for-Local-261116495.pdf
 swept: 2026-11-15
 posted: 2026-11-12
 origin: daily sweep script

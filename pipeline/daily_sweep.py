@@ -137,7 +137,7 @@ year: {p["published"][:4]}
 venue: {q("arXiv " + p["primary"] + " (" + p["id"] + ")")}
 url: https://arxiv.org/abs/{p["id"]}
 pdf_url: https://arxiv.org/pdf/{p["id"]}
-pdf:
+pdf: 00-Inbox/papers/{name[:-3]}.pdf
 swept: {today.isoformat()}
 posted: {p["published"]}
 origin: daily sweep script

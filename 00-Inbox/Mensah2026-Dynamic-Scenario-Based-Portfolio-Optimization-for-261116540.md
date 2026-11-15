@@ -7,7 +7,7 @@ year: 2026
 venue: "arXiv q-fin.RM (2611.16540)"
 url: https://arxiv.org/abs/2611.16540
 pdf_url: https://arxiv.org/pdf/2611.16540
-pdf:
+pdf: 00-Inbox/papers/Mensah2026-Dynamic-Scenario-Based-Portfolio-Optimization-for-261116540.pdf
 swept: 2026-11-15
 posted: 2026-11-12
 origin: daily sweep script

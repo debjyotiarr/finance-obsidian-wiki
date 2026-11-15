@@ -75,13 +75,13 @@ def main() -> int:
 
     done = failed = skipped = 0
     for stub in sorted(INBOX.rglob("*.md")):
-        text = stub.read_text(encoding="utf-8")
+        text = original = stub.read_text(encoding="utf-8")
         m = re.search(r"^url:\s*(\S+)", text, re.M)
         aid = arxiv_id(m.group(1)) if m else None
         if not aid or not re.search(r"^status:\s*inbox", text, re.M):
             continue
         pdf_path = PDFS / (stub.stem + ".pdf")
-        has_pdf = bool(re.search(r"^pdf:\s*\S", text, re.M)) and pdf_path.exists()
+        has_pdf = pdf_path.exists()
         has_abs = "(verbatim from arXiv)" in text and not redo
         if has_abs and (has_pdf or not want_pdf):
             skipped += 1
@@ -111,7 +111,8 @@ def main() -> int:
                 pdf_path.write_bytes(pdf)
                 rel = pdf_path.relative_to(ROOT).as_posix()
                 text = re.sub(r"^pdf:.*$", f"pdf: {rel}", text, count=1, flags=re.M)
-            stub.write_text(text, encoding="utf-8")
+            if text != original:
+                stub.write_text(text, encoding="utf-8")
             done += 1
         except Exception as e:  # keep going; report at the end
             failed += 1

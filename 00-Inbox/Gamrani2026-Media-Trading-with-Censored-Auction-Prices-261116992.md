@@ -7,7 +7,7 @@ year: 2026
 venue: "arXiv q-fin.MF (2611.16992)"
 url: https://arxiv.org/abs/2611.16992
 pdf_url: https://arxiv.org/pdf/2611.16992
-pdf:
+pdf: 00-Inbox/papers/Gamrani2026-Media-Trading-with-Censored-Auction-Prices-261116992.pdf
 swept: 2026-11-15
 posted: 2026-11-12
 origin: daily sweep script

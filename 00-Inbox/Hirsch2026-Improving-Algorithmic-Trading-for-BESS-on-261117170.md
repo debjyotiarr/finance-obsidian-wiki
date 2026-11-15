@@ -7,7 +7,7 @@ year: 2026
 venue: "arXiv q-fin.ST (2611.17170)"
 url: https://arxiv.org/abs/2611.17170
 pdf_url: https://arxiv.org/pdf/2611.17170
-pdf:
+pdf: 00-Inbox/papers/Hirsch2026-Improving-Algorithmic-Trading-for-BESS-on-261117170.pdf
 swept: 2026-11-15
 posted: 2026-11-12
 origin: daily sweep script
