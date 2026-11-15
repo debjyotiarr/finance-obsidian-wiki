@@ -7,7 +7,7 @@ year: 2022
 venue: "arXiv 2203.03179"
 url: http://arxiv.org/abs/2203.03179
 pdf_url:
-pdf:
+pdf: 00-Inbox/papers/Neufeld2022-Detecting-Data-driven-Robust-Statistical-Arbitrage-03d412.pdf
 swept: 2026-11-12
 origin: baobach/hft_papers catalogue
 relevance: medium
@@ -16,9 +16,8 @@ tags: [arxiv, stat-arb]
 
 # Detecting Data-driven Robust Statistical Arbitrage Strategies with Deep Neural Networks
 
-## Abstract
-*Not available — the source catalogue has no abstracts. Fetch from the URL above before extracting.*
-Catalogue description: We present an approach, based on deep neural networks, that allows identifying robust statistical arbitrage strategies in financial markets.
+## Abstract (verbatim from arXiv)
+We present an approach, based on deep neural networks, that allows identifying robust statistical arbitrage strategies in financial markets. Robust statistical arbitrage strategies refer to trading strategies that enable profitable trading under model ambiguity. The presented novel methodology allows to consider a large amount of underlying securities simultaneously and does not depend on the identification of cointegrated pairs of assets, hence it is applicable on high-dimensional financial markets or in markets where classical pairs trading approaches fail. Moreover, we provide a method to build an ambiguity set of admissible probability measures that can be derived from observed market data. Thus, the approach can be considered as being model-free and entirely data-driven. We showcase the applicability of our method by providing empirical investigations with highly profitable trading performances even in 50 dimensions, during financial crises, and when the cointegration relationship between asset pairs stops to persist.
 
 ## Why staged
 Auto-triaged by keyword from the baobach/hft_papers catalogue (unreviewed; quality unknown). Possible atoms: [[Pairs Trading and Statistical Arbitrage]].

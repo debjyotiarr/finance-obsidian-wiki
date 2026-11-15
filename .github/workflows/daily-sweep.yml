@@ -1,0 +1,39 @@
+name: Daily paper sweep
+
+on:
+  schedule:
+    - cron: "14 2 * * *"   # 07:44 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: daily-sweep
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: inbox-sweeps
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Find new papers and write stubs
+        run: python3 -I pipeline/daily_sweep.py
+      - name: Rebuild inbox index
+        run: python3 -I pipeline/build_inbox_index.py
+      - name: Check vault integrity
+        run: python3 -I pipeline/check_vault.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 00-Inbox "90-Meta/Sweep Log.md"
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Daily sweep $(date -u +%F)"
+            git push origin HEAD:inbox-sweeps
+          fi

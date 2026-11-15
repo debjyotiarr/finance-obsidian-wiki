@@ -7,15 +7,15 @@ year: 2026
 venue: arXiv q-fin.TR (2607.28323)
 url: https://arxiv.org/abs/2607.28323
 pdf_url: https://arxiv.org/pdf/2607.28323
-pdf:
+pdf: 00-Inbox/papers/Barzykin-etal2026-Passive-Market-Impact.pdf
 swept: 2026-11-03
 tags: [execution, impact, orderbook]
 ---
 
 # Optimal Execution with Passive Market Impact
 
-## Abstract (summarized — arxiv.org unreachable from this environment; verify at url)
-Mesoscopic optimal-execution model where the trader executes with *limit orders* and passive quoting itself has price impact: quote aggressiveness trades off fill speed against accumulated impact and non-execution risk. Handles heterogeneous decay rates, transient impact, and target schedules; under transient impact the optimal schedule sits closer to TWAP than under permanent impact. Submitted 2026-07-30. **Note: just outside the 90-day lookback (~96 days) — staged anyway for fit.**
+## Abstract (verbatim from arXiv)
+We derive a mesoscopic model for optimal execution with limit orders that incorporates microstructural features of passive price impact. Our framework is based on two empirical observables: the approximately exponential decay of limit-order fill probabilities with distance from the midprice, and the short-term linear response of price changes to order flow imbalance. Combining these ingredients, we obtain a reduced-form passive impact rate that decays exponentially with quote distance. The model describes passive execution at a tactical level, where fills arise from a sequence of quote adjustments that balance execution probability, adverse selection, and opportunity cost. We formulate and solve an optimal liquidation problem in which the trader controls the aggressiveness of passive sell quotes. This generates a trade-off between higher fill intensity and larger accumulated impact on the one hand, and lower impact but greater non-execution risk on the other. Empirical calibration using NASDAQ equities and public FX supports the empirical foundations of the model. We also analyse extensions with heterogeneous decay rates, transient impact, and target execution schedules.
 
 ## Why staged
 Fills a real gap: [[Optimal Execution (Almgren-Chriss)]] and [[Square-Root Law of Market Impact]] treat impact as taker-side; passive impact connects execution to [[Queue Position Value]] and [[Adverse Selection]]. Barzykin (HSBC) + Neuman is a credible practitioner-academic pairing.

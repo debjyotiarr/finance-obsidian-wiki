@@ -7,15 +7,15 @@ year: 2026
 venue: arXiv q-fin.TR (2608.18195)
 url: https://arxiv.org/abs/2608.18195
 pdf_url: https://arxiv.org/pdf/2608.18195
-pdf:
+pdf: 00-Inbox/papers/Cheridito-Weiss2026-MultiLevel-MM-RL.pdf
 swept: 2026-11-03
 tags: [market-making, machine-learning, orderbook]
 ---
 
 # Multi-Level Market Making with Reinforcement Learning
 
-## Abstract (summarized — arxiv.org unreachable from this environment; verify at url)
-RL framework for LOB market making with market and limit orders of varying sizes across several price levels. State includes the full book, queue positions, and past order flow. Order allocations modeled with multivariate logistic-normal distributions; a deep-set encoder turns variable-length order sets into fixed-size representations; potential-based reward shaping speeds learning without changing the optimal policy. Reported to outperform benchmarks in three simulated environments. ETH Zurich; submitted 2026-08-18.
+## Abstract (verbatim from arXiv)
+We introduce a reinforcement learning framework for market making in a limit order book. Our algorithm aims to maximize trading revenue by dynamically submitting market and limit orders of varying sizes across multiple price levels while controlling inventory size. We use multivariate logistic-normal distributions to model order allocations and employ a deep-set encoder to aggregate features from variable-length order sets into a fixed-dimensional latent representation. Additionally, we incorporate potential-based reward shaping to accelerate learning without altering the optimal policy. We illustrate the performance of the method in three simulated market environments consisting of noise traders who submit random trades, tactical traders who respond to instantaneous volume imbalance, and strategic traders who trade in the direction of an exponentially weighted volume imbalance signal.
 
 ## Why staged
 Multi-level quoting with explicit queue-position state connects [[Market Maker Inventory Control]], [[Queue Position Value]], and [[Limit Order Book Shape as Signal]]. The deep-set treatment of variable order sets is a reusable modeling idea.

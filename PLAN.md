@@ -16,15 +16,18 @@ Goal: a repeatable agentic pass that discovers candidate papers from known sites
 
 - [x] Bulk-import external catalogue (baobach/hft_papers): 352 keyword-triaged stubs in `00-Inbox/baobach-catalogue/` via `pipeline/import_catalogue.py` (2026-11-12). Review by `relevance:`; abstracts must be fetched before extraction.
 
+- [x] Fetch verbatim abstracts + PDFs for all arXiv stubs in the inbox (63 papers; PDFs live in `00-Inbox/papers/`, which is gitignored: run the fetcher on your own machine to get them) via `pipeline/fetch_arxiv.py` (2026-11-15). Non-arXiv stubs (298) still lack both.
+- [x] Daily sweep moved to a script + GitHub Action (2026-11-15): `pipeline/daily_sweep.py` run by `.github/workflows/daily-sweep.yml` at 07:44 IST, pushing to `inbox-sweeps`. **The schedule only starts once the workflow file is on `main` (merge PR #2).** Until then a scheduled task in the Claude session runs the same script. Idea column is filled in later review passes.
+
 ## Phase 2 — Python extractor (hand-picked PDFs → draft literature notes)
 
-Goal: deterministic script that converts a reviewed inbox paper into a draft literature note. Papers are **hand-chosen**; the script does mechanical extraction only.
+Done 2026-11-15: `pipeline/extract.py`.
 
-- [ ] `pipeline/extract.py`: input = inbox stub + PDF; output = `10-Literature/Author Year - Short Title.md` prefilled from the Literature Note Template (metadata from the stub, abstract, section headings, and extracted key sentences; `status: skimmed`).
-- [ ] PDF text layer: pypdf/pdfplumber first; add OCR fallback later only if needed.
-- [ ] Carry a `pdf:` frontmatter link to the archived PDF; move the PDF from inbox to a `10-Literature/pdfs/` folder (or leave in inbox/papers — decide and document in Conventions).
-- [ ] Delete the inbox stub on successful extraction.
-- [ ] `pipeline/requirements.txt` + a short `pipeline/README.md` with usage.
+- [x] Mark a stub `status: picked`, then `python3 pipeline/extract.py --picked` writes `10-Literature/Author Year - Title.md` (`status: skimmed`), moves the PDF to `10-Literature/pdfs/` (gitignored) and removes the stub.
+- [x] Focus set for a trading project: implementation, data, costs, latency, results, each as verbatim sentences with page numbers; maths not extracted, only rated light/moderate/heavy; explicit warning when a paper ignores costs or latency.
+- [x] PDF text via pypdf, falling back to `pdftotext`.
+- [ ] No OCR: scanned PDFs yield nothing. Add only if needed.
+- [ ] Tune keyword lists after the first real batch (tested on 7 papers so far).
 
 ## Phase 3 — Claude Code refinement pass (literature notes → atoms + links)
 
@@ -52,5 +55,5 @@ Goal: systematically mine the graph for new signal ideas.
 ## Open decisions
 
 - Whether to commit `.obsidian/` config for a consistent graph/plugin setup across machines.
-- PDF storage policy: in-repo (simple, but repo grows) vs. gitignored local folder + URL-only references.
+- ~~PDF storage policy~~ decided 2026-11-15: PDFs are never committed; they live in the gitignored `00-Inbox/papers/` and are re-fetchable with `pipeline/fetch_arxiv.py`.
 - Whether sweep sessions run manually or on a schedule (and where that schedule lives).
