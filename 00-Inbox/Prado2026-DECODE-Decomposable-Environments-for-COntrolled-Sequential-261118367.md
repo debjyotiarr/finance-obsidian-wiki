@@ -1,0 +1,24 @@
+---
+type: literature
+status: inbox
+title: "DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation"
+authors: ["Diego Silva Prado", "Bruno Caldas de Souza", "Tiago Amaral Penteado de Jesus", "Ricardo Guimarães Herrmann", "Cristiano Breuel", "Cristiano Bevitori Maffia De Oliveira"]
+year: 2026
+venue: "arXiv cs.LG (2611.18367)"
+url: https://arxiv.org/abs/2611.18367
+pdf_url: https://arxiv.org/pdf/2611.18367
+pdf: 00-Inbox/papers/Prado2026-DECODE-Decomposable-Environments-for-COntrolled-Sequential-261118367.pdf
+swept: 2026-11-16
+posted: 2026-11-13
+origin: daily sweep script
+relevance: low
+tags: []
+---
+
+# DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation
+
+## Abstract (verbatim from arXiv)
+When a sequential decision system falls short of an optimum, its score does not reveal which modifications would improve its decisions. DECODE is a benchmark for testing such modifications through controlled experiments on planning and available information. Its consumer-credit collections generator provides five partially observed environments that share known dynamics matrices and vary a memory parameter and process noise. The experiments change selected inputs or planning rules while keeping the rest of the solver fixed. Each comparison specifies the solver's state inputs, response inputs and planning horizon. On the deterministic base environment, which was selected for a large gap between six-month and one-month planning with the hidden state, extending planning from one to six months increases the scores of two gradient-boosted solvers by 15 to 17 percentage points of the exact optimum, computed with the hidden state and borrower traits. Even at this horizon, the best graded solver, whose repayment response is fitted on logs, remains 15.6 points below that optimum. In a specified intervention sequence, three changes to its state inputs and their evaluation during search lower its score by 6.3 points, and replacing its fitted repayment model with the true response, evaluated with hidden borrower traits, then raises it by 15.6, a net recovery of nine of those points. Because the intermediate effects are conditional on the repayment model and the order of the changes, they do not uniquely assign the gap to separate causes. Within these limits, DECODE makes hypotheses about solver performance testable through specified interventions under known dynamics and explicit information conditions.
+
+## Why staged
+Auto-staged by the daily sweep (keyword filter, unreviewed). Possible related notes: no obvious match.

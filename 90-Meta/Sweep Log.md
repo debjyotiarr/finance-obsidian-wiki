@@ -82,6 +82,10 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-15 | Mensah et al. — [Dynamic Scenario-Based Portfolio Optimization for Multi-Asset ETFs](https://arxiv.org/abs/2611.16540) | — |
 | 2026-11-15 | Huang — [TAPES: Terminal Adjoint-Propagated Error Scheduling for Financial Diffusion Samplers](https://arxiv.org/abs/2611.16484) | — |
 | 2026-11-15 | Choulli & Elazkany — [Novel Esscher concepts for informational risks and valuation in market models under random horizon](https://arxiv.org/abs/2611.16129) | — |
+| 2026-11-16 | Bayer et al. — [Local Stochastic Volatility Iterations](https://arxiv.org/abs/2611.18214) | — |
+| 2026-11-16 | Yang et al. — [Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents](https://arxiv.org/abs/2611.18150) | — |
+| 2026-11-16 | Prado et al. — [DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation](https://arxiv.org/abs/2611.18367) | — |
+| 2026-11-16 | Chassagneux et al. — [Well-Posedness of Semimartingale Optimal Transport with Partial Marginal Constraints for Model Calibration](https://arxiv.org/abs/2611.17902) | — |
 
 ## Runs
 
@@ -91,3 +95,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-12 | n/a (catalogue import) | 352 (h/m/l: 58/261/33) | baobach/hft_papers CSV, 2,302 rows | Keyword-triaged, not read; stubs in `00-Inbox/baobach-catalogue/`. Per-paper rows omitted from the Papers table (no ideas available without abstracts). See [[baobach HFT Papers Catalogue]]. |
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 7 (h/m/l: 0/4/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-16 | 2026-11-13 → 2026-11-16 | 4 (h/m/l: 0/2/2) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
