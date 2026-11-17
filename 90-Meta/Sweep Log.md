@@ -86,6 +86,17 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-16 | Yang et al. — [Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents](https://arxiv.org/abs/2611.18150) | — |
 | 2026-11-16 | Prado et al. — [DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation](https://arxiv.org/abs/2611.18367) | — |
 | 2026-11-16 | Chassagneux et al. — [Well-Posedness of Semimartingale Optimal Transport with Partial Marginal Constraints for Model Calibration](https://arxiv.org/abs/2611.17902) | — |
+| 2026-11-17 | Caglar et al. — [Stochastic Modelling of High-frequency (HF) Crypto Limit Order Book (LOB) with General Compound Marked Hawkes Process](https://arxiv.org/abs/2611.20839) | — |
+| 2026-11-17 | Supriadi — [Dynamic Spatio-Temporal Graph Attention Networks with Nested Clustered Optimization for Multi-Asset Portfolios](https://arxiv.org/abs/2611.19903) | — |
+| 2026-11-17 | Borrageiro — [Markets for Compute and Inference: Structure, Financing, and Risk Transfer](https://arxiv.org/abs/2611.20242) | — |
+| 2026-11-17 | Wang et al. — [AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data](https://arxiv.org/abs/2611.19937) | — |
+| 2026-11-17 | Adachi & Hara — [Toward an Admissibility Theory of Aharonov--Bohm Arbitrage](https://arxiv.org/abs/2611.19870) | — |
+| 2026-11-17 | Bansal et al. — [PIRanNN: Random-Feature Pricing and Calibration under Jump-Diffusion and Stochastic-Volatility Models](https://arxiv.org/abs/2611.19792) | — |
+| 2026-11-17 | Kaissi — [Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity](https://arxiv.org/abs/2611.21262) | — |
+| 2026-11-17 | Dominguez — [A Second Order Transport Scheme for Dynamic Portfolio Subspaces under a Varying Risk Metric](https://arxiv.org/abs/2611.20911) | — |
+| 2026-11-17 | Hu et al. — [Beyond Marginal Risk: ESG and Multidimensional Fragility in Equity Markets](https://arxiv.org/abs/2611.20589) | — |
+| 2026-11-17 | Zhang — [Mollification Regularization and Asymptotic Correction for Analytical Expansion of BSDEs with Non-Smooth Terminal Conditions. I. Theory](https://arxiv.org/abs/2611.20550) | — |
+| 2026-11-17 | Kim & Zhou — [EWMA Principal Eigenportfolios of Equity Returns: Market Representation and Beta-Hedging Performance](https://arxiv.org/abs/2611.20363) | — |
 
 ## Runs
 
@@ -96,3 +107,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 7 (h/m/l: 0/4/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-16 | 2026-11-13 → 2026-11-16 | 4 (h/m/l: 0/2/2) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-17 | 2026-11-14 → 2026-11-17 | 11 (h/m/l: 1/1/9) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
