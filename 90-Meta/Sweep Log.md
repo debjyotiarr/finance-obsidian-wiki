@@ -97,6 +97,9 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-17 | Hu et al. — [Beyond Marginal Risk: ESG and Multidimensional Fragility in Equity Markets](https://arxiv.org/abs/2611.20589) | — |
 | 2026-11-17 | Zhang — [Mollification Regularization and Asymptotic Correction for Analytical Expansion of BSDEs with Non-Smooth Terminal Conditions. I. Theory](https://arxiv.org/abs/2611.20550) | — |
 | 2026-11-17 | Kim & Zhou — [EWMA Principal Eigenportfolios of Equity Returns: Market Representation and Beta-Hedging Performance](https://arxiv.org/abs/2611.20363) | — |
+| 2026-11-18 | Afroz et al. — [Revisiting Equity-Bond Diversification under Tail Risk and Structural Market Change: Evidence from Global ETFs and Model-Implied Option Prices](https://arxiv.org/abs/2611.21897) | — |
+| 2026-11-18 | Chalvatzis — [Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers](https://arxiv.org/abs/2611.23126) | — |
+| 2026-11-18 | Chen et al. — [Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility](https://arxiv.org/abs/2611.22604) | — |
 
 ## Runs
 
@@ -108,3 +111,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-15 | 2026-11-12 → 2026-11-15 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-16 | 2026-11-13 → 2026-11-16 | 4 (h/m/l: 0/2/2) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-17 | 2026-11-14 → 2026-11-17 | 11 (h/m/l: 1/1/9) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-18 | 2026-11-15 → 2026-11-18 | 3 (h/m/l: 0/3/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
