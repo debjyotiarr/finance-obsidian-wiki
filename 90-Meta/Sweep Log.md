@@ -100,6 +100,13 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-18 | Afroz et al. — [Revisiting Equity-Bond Diversification under Tail Risk and Structural Market Change: Evidence from Global ETFs and Model-Implied Option Prices](https://arxiv.org/abs/2611.21897) | — |
 | 2026-11-18 | Chalvatzis — [Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers](https://arxiv.org/abs/2611.23126) | — |
 | 2026-11-18 | Chen et al. — [Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility](https://arxiv.org/abs/2611.22604) | — |
+| 2026-11-19 | Ramachandran — [Algorithmic Market Making Can Lead to Rough Volatility Through the Order Book](https://arxiv.org/abs/2611.24028) | — |
+| 2026-11-19 | Itkin & Muravey — [Spectral Pricing of Corridor Products under Layered Local Volatility](https://arxiv.org/abs/2611.23587) | — |
+| 2026-11-19 | Glasserman et al. — [Total Positivity Properties of American Options](https://arxiv.org/abs/2611.23495) | — |
+| 2026-11-19 | Larsen — [Stock bubbles in limited participation models with power utilities](https://arxiv.org/abs/2611.24912) | — |
+| 2026-11-19 | Wu et al. — [Vibe-Trading: Towards Agent-Native Trading](https://arxiv.org/abs/2611.24845) | — |
+| 2026-11-19 | Kozlova & Yeomans — [Sensitivity analysis in real options studies: systematic review and recommendations](https://arxiv.org/abs/2611.24266) | — |
+| 2026-11-19 | Chen et al. — [When Price Charts Rhyme: Historical Visual Retrieval for Stock Return Prediction](https://arxiv.org/abs/2611.23723) | — |
 
 ## Runs
 
@@ -112,3 +119,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-16 | 2026-11-13 → 2026-11-16 | 4 (h/m/l: 0/2/2) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-17 | 2026-11-14 → 2026-11-17 | 11 (h/m/l: 1/1/9) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-18 | 2026-11-15 → 2026-11-18 | 3 (h/m/l: 0/3/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-19 | 2026-11-16 → 2026-11-19 | 7 (h/m/l: 1/0/6) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
