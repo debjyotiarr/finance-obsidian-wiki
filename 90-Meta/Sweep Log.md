@@ -107,6 +107,15 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-19 | Wu et al. — [Vibe-Trading: Towards Agent-Native Trading](https://arxiv.org/abs/2611.24845) | — |
 | 2026-11-19 | Kozlova & Yeomans — [Sensitivity analysis in real options studies: systematic review and recommendations](https://arxiv.org/abs/2611.24266) | — |
 | 2026-11-19 | Chen et al. — [When Price Charts Rhyme: Historical Visual Retrieval for Stock Return Prediction](https://arxiv.org/abs/2611.23723) | — |
+| 2026-11-20 | Qureshi — [Trading Before a Committed Rebalance](https://arxiv.org/abs/2611.25762) | — |
+| 2026-11-20 | Grasselli et al. — [A joint framework for SPX, VIX and VXX](https://arxiv.org/abs/2611.25047) | — |
+| 2026-11-20 | Kozhevnikov — [Optimal Control in Pairs Trading with Negative-Power Utility](https://arxiv.org/abs/2611.26568) | — |
+| 2026-11-20 | Schlegel & Mamageishvili — [Path-Independent Deleveraging Rules](https://arxiv.org/abs/2611.26623) | — |
+| 2026-11-20 | Qadi et al. — [A Three-Factor Hull-White Scenario Generator for Macro-Financial Stress Forecasting](https://arxiv.org/abs/2611.26200) | — |
+| 2026-11-20 | Daya et al. — [Feasible sub-replicating portfolios for basket options via the block rearrangement algorithm](https://arxiv.org/abs/2611.26119) | — |
+| 2026-11-20 | Laloux & Srinivasan — [Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225](https://arxiv.org/abs/2611.25860) | — |
+| 2026-11-20 | Cai et al. — [Auto-Alpha: A Framework for Autonomous Factor Research](https://arxiv.org/abs/2611.25732) | — |
+| 2026-11-20 | Hoshisashi — [Quantum Calibration of Local-Volatility Surfaces from Sparse Option Quotes](https://arxiv.org/abs/2611.25344) | — |
 
 ## Runs
 
@@ -120,3 +129,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-17 | 2026-11-14 → 2026-11-17 | 11 (h/m/l: 1/1/9) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-18 | 2026-11-15 → 2026-11-18 | 3 (h/m/l: 0/3/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-19 | 2026-11-16 → 2026-11-19 | 7 (h/m/l: 1/0/6) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-20 | 2026-11-17 → 2026-11-20 | 9 (h/m/l: 1/2/6) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
