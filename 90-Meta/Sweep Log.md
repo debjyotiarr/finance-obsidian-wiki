@@ -116,6 +116,10 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-20 | Laloux & Srinivasan — [Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225](https://arxiv.org/abs/2611.25860) | — |
 | 2026-11-20 | Cai et al. — [Auto-Alpha: A Framework for Autonomous Factor Research](https://arxiv.org/abs/2611.25732) | — |
 | 2026-11-20 | Hoshisashi — [Quantum Calibration of Local-Volatility Surfaces from Sparse Option Quotes](https://arxiv.org/abs/2611.25344) | — |
+| 2026-11-23 | Ranco — [Do Econophysics-Inspired Inputs Improve Neural Covariance Forecasting? A Leakage-Free Walk-Forward Study of Intraday DJIA Data](https://arxiv.org/abs/2611.27616) | — |
+| 2026-11-23 | Kratsios et al. — [Reconstructing risk preferences from data](https://arxiv.org/abs/2611.27692) | — |
+| 2026-11-23 | Miao et al. — [Risk sharing for background risk models with infinite mean](https://arxiv.org/abs/2611.27485) | — |
+| 2026-11-23 | Ruelloux et al. — [Nonlinear Shrinkage for Higher Moments Estimation in Large Portfolios](https://arxiv.org/abs/2611.27274) | — |
 
 ## Runs
 
@@ -132,3 +136,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-20 | 2026-11-17 → 2026-11-20 | 9 (h/m/l: 1/2/6) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-21 | 2026-11-18 → 2026-11-21 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-22 | 2026-11-19 → 2026-11-22 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-23 | 2026-11-20 → 2026-11-23 | 4 (h/m/l: 0/1/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
