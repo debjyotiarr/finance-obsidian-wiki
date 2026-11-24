@@ -120,6 +120,15 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-23 | Kratsios et al. — [Reconstructing risk preferences from data](https://arxiv.org/abs/2611.27692) | — |
 | 2026-11-23 | Miao et al. — [Risk sharing for background risk models with infinite mean](https://arxiv.org/abs/2611.27485) | — |
 | 2026-11-23 | Ruelloux et al. — [Nonlinear Shrinkage for Higher Moments Estimation in Large Portfolios](https://arxiv.org/abs/2611.27274) | — |
+| 2026-11-24 | Wang et al. — [Marked INAR model and the rough Hawkes--Heston limit](https://arxiv.org/abs/2611.29565) | — |
+| 2026-11-24 | Chen et al. — [Modeling Joint Tail Risk and Dependence for Cryptocurrencies via a Copula-Based Semiparametric Framework](https://arxiv.org/abs/2611.28524) | — |
+| 2026-11-24 | Singh et al. — [Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL](https://arxiv.org/abs/2611.31190) | — |
+| 2026-11-24 | Zhao et al. — [Design an Algorithmic Stablecoin based on a Predictive PID Controller](https://arxiv.org/abs/2611.30982) | — |
+| 2026-11-24 | Xu — [Robust bounds for American fixed-strike lookback puts](https://arxiv.org/abs/2611.30980) | — |
+| 2026-11-24 | Valeyre — [Cleaning correlation matrices with external information: the Maximum Variance estimat](https://arxiv.org/abs/2611.30843) | — |
+| 2026-11-24 | Gawronsky — [CCFinance: Reconstructing Financial News Samples from Web Archives](https://arxiv.org/abs/2611.30737) | — |
+| 2026-11-24 | Liu & Zheng — [Do Candlestick Charts Suffice? The Incremental Economic Value of Technical Indicators in Stock Return Prediction](https://arxiv.org/abs/2611.30584) | — |
+| 2026-11-24 | Chen — [Wasserstein Penalisation as an Endogenous Breadth Constraint in Penalised Mean-Variance Portfolio Selection](https://arxiv.org/abs/2611.30046) | — |
 
 ## Runs
 
@@ -137,3 +146,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-21 | 2026-11-18 → 2026-11-21 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-22 | 2026-11-19 → 2026-11-22 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-23 | 2026-11-20 → 2026-11-23 | 4 (h/m/l: 0/1/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-24 | 2026-11-21 → 2026-11-24 | 9 (h/m/l: 1/0/8) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
