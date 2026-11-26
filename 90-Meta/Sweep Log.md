@@ -135,6 +135,12 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-25 | Sepp & Rakhmonov — [Rough log-normal stochastic volatility with quadratic drift: second-moment stability and the martingale property under positive correlation](https://arxiv.org/abs/2611.32791) | — |
 | 2026-11-25 | Cesarone et al. — [Semivariance and Semivolatility in Portfolio Selection: A Unified Framework for Downside-Risk Portfolio Models](https://arxiv.org/abs/2611.32638) | — |
 | 2026-11-25 | Wang et al. — [Dynamic stochastic multi-attribute group decision-making based on fractional-order stochastic dominance criteria](https://arxiv.org/abs/2611.32488) | — |
+| 2026-11-26 | Jacquier et al. — [Large deviations for integrated exponentials of Gaussian Volterra processes - application to variance options](https://arxiv.org/abs/2611.34567) | — |
+| 2026-11-26 | Zhu et al. — [Graph-Informed Deep Factor Model for Statistical Arbitrage](https://arxiv.org/abs/2611.34209) | — |
+| 2026-11-26 | He — [The Information Content of News Embeddings](https://arxiv.org/abs/2611.33458) | — |
+| 2026-11-26 | Liao & Agarwal — [Modelling and Calibration of Climate-Related Credit Risk Under the Emissions Trading System](https://arxiv.org/abs/2611.34771) | — |
+| 2026-11-26 | Lessard et al. — [Distance from the Truth: Why Fragmented Merchant Underwriting Misses Risk, and What Source-Attributable Evidence Changes](https://arxiv.org/abs/2611.34696) | — |
+| 2026-11-26 | Cerqueti et al. — [Rank-size analysis of optimal portfolio weights with a reverse-engineering application](https://arxiv.org/abs/2611.34171) | — |
 
 ## Runs
 
@@ -154,3 +160,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-23 | 2026-11-20 → 2026-11-23 | 4 (h/m/l: 0/1/3) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-24 | 2026-11-21 → 2026-11-24 | 9 (h/m/l: 1/0/8) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-25 | 2026-11-22 → 2026-11-25 | 6 (h/m/l: 0/1/5) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-26 | 2026-11-23 → 2026-11-26 | 6 (h/m/l: 0/2/4) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
