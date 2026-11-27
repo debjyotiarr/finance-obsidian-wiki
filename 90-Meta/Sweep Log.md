@@ -161,3 +161,4 @@ The master list of papers and ideas: every paper any sweep or import has staged,
 | 2026-11-24 | 2026-11-21 → 2026-11-24 | 9 (h/m/l: 1/0/8) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-25 | 2026-11-22 → 2026-11-25 | 6 (h/m/l: 0/1/5) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
 | 2026-11-26 | 2026-11-23 → 2026-11-26 | 6 (h/m/l: 0/2/4) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
+| 2026-11-27 | 2026-11-24 → 2026-11-27 | 0 (h/m/l: 0/0/0) | arXiv: direct (API) | Script sweep, 300 listed. Ideas not yet written. |
